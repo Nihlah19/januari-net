@@ -35,12 +35,12 @@ const Portfolio = () => {
     <section id="portfolio" className="py-20 bg-gradient-to-b from-background to-card/20">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4">
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4 animate-fade-in-up">
             <span className="text-glow-cyan text-primary">Portfolio</span>{" "}
             <span className="text-glow-purple text-secondary">Project</span>
           </h2>
-          <div className="w-24 h-1 gradient-neon mx-auto mb-4 rounded-full" />
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+          <div className="w-24 h-1 gradient-neon mx-auto mb-4 rounded-full animate-fade-in-up" />
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
             Berikut beberapa karya desain terbaik yang telah saya kerjakan
           </p>
 
@@ -49,7 +49,8 @@ const Portfolio = () => {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="group relative bg-card border-2 border-primary/20 rounded-lg overflow-hidden hover:border-primary transition-all duration-300 hover:scale-[1.02] hover:box-glow-cyan"
+                className="group relative bg-card border-2 border-primary/20 rounded-lg overflow-hidden hover:border-primary transition-all duration-300 hover:scale-[1.02] hover:box-glow-cyan animate-fade-in-up"
+                style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'both' }}
               >
                 <div className="aspect-video overflow-hidden">
                   <img

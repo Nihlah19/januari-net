@@ -13,11 +13,11 @@ const About = () => {
     <section id="about" className="py-20 relative">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4">
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4 animate-fade-in-up">
             <span className="text-glow-cyan text-primary">Tentang</span>{" "}
             <span className="text-glow-purple text-secondary">Saya</span>
           </h2>
-          <div className="w-24 h-1 gradient-neon mx-auto mb-12 rounded-full" />
+          <div className="w-24 h-1 gradient-neon mx-auto mb-12 rounded-full animate-fade-in-up" />
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Profile Image */}
@@ -35,12 +35,12 @@ const About = () => {
             {/* Bio & Quote */}
             <div className="space-y-6">
               <div className="space-y-4">
-                <p className="text-lg leading-relaxed text-muted-foreground">
+                <p className="text-lg leading-relaxed text-muted-foreground animate-fade-in-up">
                   Halo! Saya desainer grafis dan kreator yang passionate dalam menciptakan visual estetik dengan sentuhan futuristik. 
                   Dengan pengalaman di berbagai projek desain dan kerajinan buqet custom, saya siap mewujudkan ide kreatif Anda.
                 </p>
                 
-                <blockquote className="border-l-4 border-secondary pl-4 italic text-lg text-secondary text-glow-purple">
+                <blockquote className="border-l-4 border-secondary pl-4 italic text-lg text-secondary text-glow-purple animate-fade-in-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
                   "Mendesain bukan sekadar visual, tapi pengalaman."
                 </blockquote>
               </div>
@@ -52,7 +52,8 @@ const About = () => {
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="group relative bg-card border-2 border-primary/20 rounded-lg p-6 hover:border-primary transition-all duration-300 hover:scale-105 hover:box-glow-cyan"
+                className="group relative bg-card border-2 border-primary/20 rounded-lg p-6 hover:border-primary transition-all duration-300 hover:scale-105 hover:box-glow-cyan animate-fade-in-up"
+                style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'both' }}
               >
                 <div className="flex flex-col items-center text-center space-y-3">
                   <skill.icon className="w-12 h-12 text-primary text-glow-cyan group-hover:animate-glow-pulse" />

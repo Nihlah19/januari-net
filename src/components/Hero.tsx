@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -30,6 +29,24 @@ const Hero = () => {
         }} />
       </div>
 
+      {/* 3D Animated Element */}
+      <div className="absolute top-20 right-10 z-0 hidden lg:block">
+        <div className="w-32 h-32 animate-cube-spin" style={{ transformStyle: 'preserve-3d' }}>
+          <div className="absolute inset-0 bg-primary/20 border-2 border-primary rounded-lg box-glow-cyan" style={{ transform: 'rotateY(0deg) translateZ(64px)' }} />
+          <div className="absolute inset-0 bg-secondary/20 border-2 border-secondary rounded-lg box-glow-purple" style={{ transform: 'rotateY(90deg) translateZ(64px)' }} />
+          <div className="absolute inset-0 bg-primary/20 border-2 border-primary rounded-lg box-glow-cyan" style={{ transform: 'rotateY(180deg) translateZ(64px)' }} />
+          <div className="absolute inset-0 bg-secondary/20 border-2 border-secondary rounded-lg box-glow-purple" style={{ transform: 'rotateY(-90deg) translateZ(64px)' }} />
+          <div className="absolute inset-0 bg-primary/20 border-2 border-primary rounded-lg box-glow-cyan" style={{ transform: 'rotateX(90deg) translateZ(64px)' }} />
+          <div className="absolute inset-0 bg-secondary/20 border-2 border-secondary rounded-lg box-glow-purple" style={{ transform: 'rotateX(-90deg) translateZ(64px)' }} />
+        </div>
+      </div>
+
+      <div className="absolute bottom-20 left-10 z-0 hidden lg:block">
+        <div className="w-24 h-24 animate-rotate-3d">
+          <div className="w-full h-full bg-gradient-to-br from-primary/30 to-secondary/30 border-2 border-primary rounded-lg box-glow-cyan" />
+        </div>
+      </div>
+
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="animate-slide-up">
@@ -39,11 +56,11 @@ const Hero = () => {
             <span className="text-glow-purple-strong text-secondary">DESIGN STUDIO</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto font-light">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto font-light animate-fade-in-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
             Creativity in <span className="text-primary text-glow-cyan font-semibold">Neon Motion</span>
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
             <Button
               size="lg"
               onClick={() => scrollToSection("portfolio")}
@@ -60,11 +77,6 @@ const Hero = () => {
               Hubungi Saya
             </Button>
           </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
-          <ArrowDown className="w-8 h-8 text-primary text-glow-cyan" />
         </div>
       </div>
     </section>
