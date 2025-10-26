@@ -18,7 +18,7 @@ const Hero = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-background/95 backdrop-blur-md" />
       </div>
 
       {/* Animated Grid Pattern */}
