@@ -30,12 +30,12 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-gradient-to-b from-card/20 to-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4 animate-fade-in-up">
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4 animate-fade-in-up opacity-0" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
             <span className="text-glow-cyan text-primary">Hubungi</span>{" "}
             <span className="text-glow-purple text-secondary">Saya</span>
           </h2>
-          <div className="w-24 h-1 gradient-neon mx-auto mb-4 rounded-full animate-fade-in-up" />
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
+          <div className="w-24 h-1 gradient-neon mx-auto mb-4 rounded-full animate-fade-in-up opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }} />
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in-up opacity-0" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
             Punya project atau pertanyaan? Jangan ragu untuk menghubungi saya melalui platform di bawah ini
           </p>
 
@@ -46,8 +46,8 @@ const Contact = () => {
                 href={contact.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group animate-fade-in-up"
-                style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'both' }}
+                className="group animate-scale-in opacity-0"
+                style={{ animationDelay: `${0.4 + index * 0.15}s`, animationFillMode: 'forwards' }}
               >
                 <div
                   className={`bg-card border-2 ${
@@ -68,7 +68,7 @@ const Contact = () => {
 
           {/* CTA Section */}
           <div className="mt-12 text-center">
-            <div className="bg-card border-2 border-primary/20 rounded-lg p-8 hover:border-primary transition-all duration-300 hover:box-glow-cyan animate-fade-in-up" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
+            <div className="bg-card border-2 border-primary/20 rounded-lg p-8 hover:border-primary transition-all duration-300 hover:box-glow-cyan animate-fade-in-up opacity-0" style={{ animationDelay: '0.9s', animationFillMode: 'forwards' }}>
               <h3 className="text-2xl font-heading font-bold mb-4">
                 Siap Untuk Memulai Project?
               </h3>
