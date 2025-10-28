@@ -30,19 +30,19 @@ const Hero = () => {
       </div>
 
       {/* 3D Animated Element */}
-      <div className="absolute top-20 right-10 z-0 hidden lg:block">
-        <div className="w-32 h-32 animate-cube-spin" style={{ transformStyle: 'preserve-3d' }}>
-          <div className="absolute inset-0 bg-primary/20 border-2 border-primary rounded-lg box-glow-cyan" style={{ transform: 'rotateY(0deg) translateZ(64px)' }} />
-          <div className="absolute inset-0 bg-secondary/20 border-2 border-secondary rounded-lg box-glow-purple" style={{ transform: 'rotateY(90deg) translateZ(64px)' }} />
-          <div className="absolute inset-0 bg-primary/20 border-2 border-primary rounded-lg box-glow-cyan" style={{ transform: 'rotateY(180deg) translateZ(64px)' }} />
-          <div className="absolute inset-0 bg-secondary/20 border-2 border-secondary rounded-lg box-glow-purple" style={{ transform: 'rotateY(-90deg) translateZ(64px)' }} />
-          <div className="absolute inset-0 bg-primary/20 border-2 border-primary rounded-lg box-glow-cyan" style={{ transform: 'rotateX(90deg) translateZ(64px)' }} />
-          <div className="absolute inset-0 bg-secondary/20 border-2 border-secondary rounded-lg box-glow-purple" style={{ transform: 'rotateX(-90deg) translateZ(64px)' }} />
+      <div className="absolute top-10 right-4 md:top-20 md:right-10 z-0">
+        <div className="w-16 h-16 md:w-32 md:h-32 animate-cube-spin" style={{ transformStyle: 'preserve-3d' }}>
+          <div className="absolute inset-0 bg-primary/20 border-2 border-primary rounded-lg box-glow-cyan" style={{ transform: 'rotateY(0deg) translateZ(32px) md:translateZ(64px)' }} />
+          <div className="absolute inset-0 bg-secondary/20 border-2 border-secondary rounded-lg box-glow-purple" style={{ transform: 'rotateY(90deg) translateZ(32px) md:translateZ(64px)' }} />
+          <div className="absolute inset-0 bg-primary/20 border-2 border-primary rounded-lg box-glow-cyan" style={{ transform: 'rotateY(180deg) translateZ(32px) md:translateZ(64px)' }} />
+          <div className="absolute inset-0 bg-secondary/20 border-2 border-secondary rounded-lg box-glow-purple" style={{ transform: 'rotateY(-90deg) translateZ(32px) md:translateZ(64px)' }} />
+          <div className="absolute inset-0 bg-primary/20 border-2 border-primary rounded-lg box-glow-cyan" style={{ transform: 'rotateX(90deg) translateZ(32px) md:translateZ(64px)' }} />
+          <div className="absolute inset-0 bg-secondary/20 border-2 border-secondary rounded-lg box-glow-purple" style={{ transform: 'rotateX(-90deg) translateZ(32px) md:translateZ(64px)' }} />
         </div>
       </div>
 
-      <div className="absolute bottom-20 left-10 z-0 hidden lg:block">
-        <div className="w-24 h-24 animate-rotate-3d">
+      <div className="absolute bottom-10 left-4 md:bottom-20 md:left-10 z-0">
+        <div className="w-16 h-16 md:w-24 md:h-24 animate-rotate-3d">
           <div className="w-full h-full bg-gradient-to-br from-primary/30 to-secondary/30 border-2 border-primary rounded-lg box-glow-cyan" />
         </div>
       </div>

@@ -12,10 +12,10 @@ All colors MUST be HSL.
     --background: 0 0% 0%;
     --foreground: 180 100% 95%;
 
-    --card: 0 0% 5%;
+    --card: 0 0% 0%;
     --card-foreground: 180 100% 95%;
 
-    --popover: 0 0% 3%;
+    --popover: 0 0% 0%;
     --popover-foreground: 180 100% 95%;
 
     /* Neon cyan primary */
@@ -26,7 +26,7 @@ All colors MUST be HSL.
     --secondary: 271 76% 53%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 15%;
+    --muted: 0 0% 0%;
     --muted-foreground: 180 50% 70%;
 
     --accent: 271 76% 53%;
@@ -36,7 +36,7 @@ All colors MUST be HSL.
     --destructive-foreground: 0 0% 100%;
 
     --border: 180 100% 50%;
-    --input: 0 0% 15%;
+    --input: 0 0% 0%;
     --ring: 180 100% 50%;
 
     --radius: 0.75rem;
