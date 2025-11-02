@@ -6,22 +6,22 @@ const Contact = () => {
     {
       icon: MessageCircle,
       name: "WhatsApp",
-      value: "+62 812-3456-7890",
+      value: "+62 831-5932-****",
       link: "https://wa.me/6281234567890",
       color: "primary",
     },
     {
       icon: Instagram,
       name: "Instagram",
-      value: "@xieee.design",
+      value: "@nhlhauly",
       link: "https://instagram.com",
       color: "secondary",
     },
     {
       icon: Mail,
       name: "Email",
-      value: "xieee.design@gmail.com",
-      link: "mailto:xieee.design@gmail.com",
+      value: "projectpribadi01@gmail.com",
+      link: "mailto:projectpribadi01@gmail.com",
       color: "primary",
     },
   ];
@@ -30,35 +30,23 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-gradient-to-b from-card/20 to-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4 animate-fade-in-up opacity-0" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
-            <span className="text-glow-cyan text-primary">Hubungi</span>{" "}
-            <span className="text-glow-purple text-secondary">Saya</span>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4 animate-fade-in-up opacity-0" style={{ animationDelay: "0.1s", animationFillMode: "forwards" }}>
+            <span className="text-glow-cyan text-primary">Hubungi</span> <span className="text-glow-purple text-secondary">Saya</span>
           </h2>
-          <div className="w-24 h-1 gradient-neon mx-auto mb-4 rounded-full animate-fade-in-up opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }} />
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in-up opacity-0" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
+          <div className="w-24 h-1 gradient-neon mx-auto mb-4 rounded-full animate-fade-in-up opacity-0" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }} />
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in-up opacity-0" style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}>
             Punya project atau pertanyaan? Jangan ragu untuk menghubungi saya melalui platform di bawah ini
           </p>
 
           <div className="grid md:grid-cols-3 gap-6">
             {contacts.map((contact, index) => (
-              <a
-                key={index}
-                href={contact.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group animate-scale-in opacity-0"
-                style={{ animationDelay: `${0.4 + index * 0.15}s`, animationFillMode: 'forwards' }}
-              >
+              <a key={index} href={contact.link} target="_blank" rel="noopener noreferrer" className="group animate-scale-in opacity-0" style={{ animationDelay: `${0.4 + index * 0.15}s`, animationFillMode: "forwards" }}>
                 <div
                   className={`bg-card border-2 ${
                     contact.color === "primary" ? "border-primary/20 hover:border-primary hover:box-glow-cyan" : "border-secondary/20 hover:border-secondary hover:box-glow-purple"
                   } rounded-lg p-6 transition-all duration-300 hover:scale-105 text-center space-y-3`}
                 >
-                  <contact.icon
-                    className={`w-12 h-12 mx-auto ${
-                      contact.color === "primary" ? "text-primary text-glow-cyan" : "text-secondary text-glow-purple"
-                    } group-hover:animate-glow-pulse`}
-                  />
+                  <contact.icon className={`w-12 h-12 mx-auto ${contact.color === "primary" ? "text-primary text-glow-cyan" : "text-secondary text-glow-purple"} group-hover:animate-glow-pulse`} />
                   <h3 className="font-heading font-bold text-lg">{contact.name}</h3>
                   <p className="text-sm text-muted-foreground break-all">{contact.value}</p>
                 </div>
@@ -68,13 +56,12 @@ const Contact = () => {
 
           {/* CTA Section */}
           <div className="mt-12 text-center">
-            <div className="bg-card border-2 border-primary/20 rounded-lg p-8 hover:border-primary transition-all duration-300 hover:box-glow-cyan animate-fade-in-up opacity-0" style={{ animationDelay: '0.9s', animationFillMode: 'forwards' }}>
-              <h3 className="text-2xl font-heading font-bold mb-4">
-                Siap Untuk Memulai Project?
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Mari wujudkan ide kreatif Anda bersama! Hubungi saya sekarang untuk konsultasi gratis.
-              </p>
+            <div
+              className="bg-card border-2 border-primary/20 rounded-lg p-8 hover:border-primary transition-all duration-300 hover:box-glow-cyan animate-fade-in-up opacity-0"
+              style={{ animationDelay: "0.9s", animationFillMode: "forwards" }}
+            >
+              <h3 className="text-2xl font-heading font-bold mb-4">Siap Untuk Memulai Project?</h3>
+              <p className="text-muted-foreground mb-6">Mari wujudkan ide kreatif Anda bersama! Hubungi saya sekarang untuk konsultasi gratis.</p>
               <Button
                 size="lg"
                 onClick={() => window.open("https://wa.me/6281234567890?text=Halo!%20Saya%20ingin%20konsultasi%20project", "_blank")}

@@ -16,21 +16,14 @@ const Footer = () => {
           <div className="flex flex-col items-center space-y-6">
             {/* Logo/Name */}
             <h3 className="text-3xl font-heading font-black">
-              <span className="text-glow-cyan text-primary">XIEEE</span>
+              <span className="text-glow-cyan text-primary">JANUARI.NET</span>
               <span className="text-muted-foreground"> DESIGN</span>
             </h3>
 
             {/* Social Links */}
             <div className="flex gap-6">
               {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
-                  className="group"
-                >
+                <a key={index} href={social.link} target="_blank" rel="noopener noreferrer" aria-label={social.label} className="group">
                   <social.icon className="w-6 h-6 text-muted-foreground hover:text-primary transition-all duration-300 group-hover:text-glow-cyan group-hover:scale-110" />
                 </a>
               ))}
@@ -41,9 +34,9 @@ const Footer = () => {
 
             {/* Copyright */}
             <p className="text-sm text-muted-foreground text-center">
-              © {currentYear} Xieee Design Studio. All rights reserved.
+              © {currentYear} Januari.net Design Studio. All rights reserved.
               <br />
-              <span className="text-xs">Crafted with 💙 in Neon</span>
+              <span className="text-xs">Crafted with 💙 in Nihlah.Auliya</span>
             </p>
           </div>
         </div>
